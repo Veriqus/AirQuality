@@ -20,6 +20,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
     }
 }
 
@@ -37,9 +40,11 @@ ext {
     supportLibraryVersion = '26.1.0'
     constraintLayoutVersion = '1.0.2'
 
+
     gsonVersion = '2.8.2'
     firebaseVersion = '11.8.0'
     googleServicesVersion = '3.2.0'
+    SpinKit = '1.1.0'
     glideVersion = '3.6.1'
     spinKitVersion = '1.1.0'
     kotlinMockitoVersion = '1.5.0'

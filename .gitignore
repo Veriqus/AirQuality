@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/workspace.xml
+app/google-services.json
+app/libs/
+app/src/main/java/com/veriqus/airquality/settings/
+build/kotlin/
