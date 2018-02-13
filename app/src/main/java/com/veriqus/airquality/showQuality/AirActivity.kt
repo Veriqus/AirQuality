@@ -8,15 +8,16 @@ import com.veriqus.airquality.commons.FragmentUtility
 
 class AirActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_air)
 
         FragmentUtility.addIfNotExist(supportFragmentManager, R.id.airActivityContainer,
-                NearestAirQualityFragment(), "NearestAirQualityFragment")
+                NearestAirQualityFragment.newInstance(), "NearestAirQualityFragment")
 
         buildAlert()
-
 
     }
 
@@ -34,4 +35,6 @@ class AirActivity : AppCompatActivity() {
                 })
                 .show()
     }
+
+
 }

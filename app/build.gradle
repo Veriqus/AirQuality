@@ -71,14 +71,16 @@ dependencies {
     implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.ext.espressoVersion"
     implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.constraintLayoutVersion"
 
-
     // Other dependencies
     implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
     implementation "com.google.firebase:firebase-core:$rootProject.ext.firebaseVersion"
     implementation "com.github.ybq:Android-SpinKit:$rootProject.ext.SpinKit"
+    implementation "org.jetbrains.anko:anko-commons:$rootProject.ext.ankoCommons"
+
 
     // Local unit tests dependencies
     implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
     testImplementation "org.mockito:mockito-core:$rootProject.ext.mockitoVersion"
     testImplementation "com.nhaarman:mockito-kotlin:$rootProject.kotlinMockitoVersion"
